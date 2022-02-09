@@ -5,7 +5,30 @@
     box-sizing: border-box;
 }
 
-// Body
 body{
-    background-color: lightgreen;
+    font-family: arial;
+}
+
+// Container
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+// COMMON
+
+// Img
+img{
+    max-width: 100%;
+}
+
+// Ul
+ul{
+    list-style-type: none;
+}
+
+// A
+a{
+    text-decoration: none;
+    color: inherit;
 }
