@@ -247,11 +247,12 @@ main .movie-detailed-information .movie-information-content .movie-talent .talen
 }
 main .movie-detailed-information .movie-information-content .movie-talent .talent-info .art-by div,
 main .movie-detailed-information .movie-information-content .movie-talent .talent-info .written-by div {
-  width: 50%;
+  width: 40%;
 }
 main .movie-detailed-information .movie-information-content .movie-talent .talent-info .art-by span,
 main .movie-detailed-information .movie-information-content .movie-talent .talent-info .written-by span {
   color: #0182f9;
+  width: 60%;
 }
 main .movie-detailed-information .movie-information-content .movie-specs .specs-info {
   font-size: 11px;
@@ -266,10 +267,16 @@ main .movie-detailed-information .movie-information-content .movie-specs .specs-
 main .movie-detailed-information .movie-information-content .movie-specs .specs-series div,
 main .movie-detailed-information .movie-information-content .movie-specs .specs-price div,
 main .movie-detailed-information .movie-information-content .movie-specs .specs-sale-date div {
-  width: 50%;
+  width: 40%;
+}
+main .movie-detailed-information .movie-information-content .movie-specs .specs-series span,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-price span,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-sale-date span {
+  width: 60%;
 }
 main .movie-detailed-information .movie-information-content .movie-specs .specs-series span {
   color: #0182f9;
+  text-transform: uppercase;
 }
 
 footer .footer-top {

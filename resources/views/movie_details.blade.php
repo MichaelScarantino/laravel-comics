@@ -14,7 +14,7 @@
         <div class="container-details">
             {{-- Movie view gallery --}}
             <div class="movie-view-gallery">
-                <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+                <img src="{{ $movie_to_show['thumb'] }}" alt="">
             </div>
             {{-- Movie details content --}}
             <div class="movie-details-content">
@@ -22,7 +22,7 @@
                 <div class="movie-main-info">
                     {{-- Movie title --}}
                     <div class="movie-title">
-                        <h2>[titolo]</h2>
+                        <h2>{{ $movie_to_show['title'] }}</h2>
                     </div>
                     {{-- Movie price --}}
                     <div class="movie-price">
@@ -30,7 +30,7 @@
                         <div class="movie-price-available">
                             {{-- price --}}
                             <div class="price">
-                                <span class="lightgreen">U.S. Price:</span> [Prezzo]
+                                <span class="lightgreen">U.S. Price:</span> {{ $movie_to_show['price'] }}
                             </div>
                             {{-- Available --}}
                             <div class="available lightgreen">
@@ -44,7 +44,7 @@
                     </div>
                     {{-- Movie description --}}
                     <div class="movie-description">
-                        [descrizione]
+                        {{ $movie_to_show['description'] }}
                     </div>
                 </div>
                 {{-- Movie advertisement --}}
@@ -69,11 +69,27 @@
                     <div class="talent-info">
                         {{-- Art by --}}
                         <div class="art-by">
-                            <div>Art by:</div> <span>[artists]</span>
+                            <div>Art by:</div>
+                            <span>
+                                @foreach($movie_to_show['artists'] as $artist)
+                                    {{ $artist }}
+                                    @if (!$loop->last) 
+                                        ,
+                                    @endif
+                                @endforeach
+                            </span>
                         </div>
                         {{-- Written by --}}
                         <div class="written-by">
-                            <div>Written by:</div> <span>[writers]</span>
+                            <div>Written by:</div>
+                            <span>
+                                @foreach($movie_to_show['writers'] as $writer)
+                                    {{ $writer }}
+                                    @if (!$loop->last) 
+                                        ,
+                                    @endif
+                                @endforeach
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -84,15 +100,15 @@
                     <div class="specs-info">
                         {{-- Specs series --}}
                         <div class="specs-series">
-                            <div>Series:</div> <span>[series]</span>
+                            <div>Series:</div> <span>{{ $movie_to_show['series'] }}</span>
                         </div>
                         {{-- Specs price --}}
                         <div class="specs-price">
-                            <div>U.S. Price:</div> <span>[writers]</span>
+                            <div>U.S. Price:</div> <span>{{ $movie_to_show['price'] }}</span>
                         </div>
                         {{-- Specs sale date --}}
                         <div class="specs-sale-date">
-                            <div>On sale date:</div> <span>[sale_date]</span>
+                            <div>On sale date:</div> <span>{{ $movie_to_show['sale_date'] }}</span>
                         </div>
                     </div>
                 </div>

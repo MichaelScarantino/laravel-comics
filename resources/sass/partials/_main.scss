@@ -206,12 +206,13 @@ main{
 
                         // Div
                         div{
-                            width: 50%;
+                            width: 40%;
                         }
 
                         // Span
                         span{
                             color: $primary_color;
+                            width: 60%;
                         }
                     }
                 }
@@ -235,14 +236,21 @@ main{
 
                     // Div
                     div{
-                        width: 50%;
+                        width: 40%;
+                    }
+
+                    // Span
+                    span{
+                        width: 60%;
                     }
                 }
                 // Specs series
                 .specs-series{
+
                     // Span
                     span{
                         color: $primary_color;
+                        text-transform: uppercase;
                     }
                 }
             }

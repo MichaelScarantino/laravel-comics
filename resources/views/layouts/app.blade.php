@@ -20,6 +20,5 @@
     {{-- Include Footer partial --}}
     @include('partials.footer')
 
-
 </body>
 </html>

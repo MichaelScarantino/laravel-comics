@@ -20,7 +20,22 @@ Route::get('/', function () {
 });
 
 
-Route::get('/movie_details', function () {
-    
-    return view('movie_details');
+Route::get('/movie_details/{id}', function ($id) {
+    $movie_array = config('comics');
+    $movie_to_show = false;
+
+    foreach($movie_array as $movie) {
+        if($movie['id'] == $id) {
+            $movie_to_show = $movie;
+        }
+    }
+    if(!$movie_to_show) {
+        abort('404');
+    }
+
+    $data = [
+        'movie_to_show' => $movie_to_show
+    ];
+
+    return view('movie_details', $data);
 })->name('movie-details');
