@@ -1,6 +1,9 @@
 // Main
 main{
 
+    &.secondary-color-background {
+        background-color: $primary_color;
+    }
     // Movies
     .movies{
         background-color: $secondary_color;

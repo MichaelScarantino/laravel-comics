@@ -91,6 +91,9 @@ header .header-bottom .header-jumbotron img {
      object-fit: cover;
 }
 
+main.secondary-color-background {
+  background-color: #0182f9;
+}
 main .movies {
   background-color: #303030;
   color: white;

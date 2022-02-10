@@ -13,7 +13,7 @@
     @include('partials.header')
 
     {{-- Main --}}
-    <main>
+    <main class="@yield('main_classes')">
         @yield('main_content')
     </main>
 

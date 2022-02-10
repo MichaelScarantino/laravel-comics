@@ -6,6 +6,10 @@
     Homepage
 @endsection
 
+@section('main_classes')
+    secondary-color-background
+@endsection
+
 {{-- Main --}}
 @section('main_content')
     {{-- Movies --}}
