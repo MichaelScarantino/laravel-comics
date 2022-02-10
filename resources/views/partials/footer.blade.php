@@ -141,7 +141,35 @@
     <div class="footer-bottom">
         {{-- Container --}}
         <div class="container">
-            <a class="btn-blue" href="#">sign-up now</a>
+            {{-- Footer bottom content --}}
+            <div class="footer-bottom-content">
+                {{-- Sign up --}}
+                <div class="sign-up">
+                    <a class="btn-blue" href="#">sign-up now</a>
+                </div>
+                
+                {{-- Follow us --}}
+                <div class="footer-follow-us">
+                    <h3>follow us</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-facebook.png') }}" alt=" Facebook logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-twitter.png') }}" alt="Twitter logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-youtube.png') }}" alt="Youtube logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-pinterest.png') }}" alt="Pinterest logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-periscope.png') }}" alt="Periscope logo"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

@@ -4,13 +4,25 @@ main{
     // Movies
     .movies{
         background-color: $secondary_color;
+        color: white;
+        // Current series
+        .current-series{
+            h3{
+                background-color: $primary_color;
+                display: inline-block;
+                padding: 10px;
+                position: relative;
+                bottom: 20px;
+            }
+            
+        }
+
         // Movies list
         .movies-list{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 50px 0;
-            color: white;
             text-transform: uppercase;
             
             // Movie
@@ -25,6 +37,18 @@ main{
                     padding-bottom: 10px;
                 }
             }
+        }
+
+        // Load more
+        .load-more{
+            text-align: center;
+            padding-bottom: 30px;
+            a{
+                background-color: $primary_color;
+                padding: 10px 40px;
+                
+            }
+            
         }
     }
 

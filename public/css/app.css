@@ -93,13 +93,20 @@ header .header-bottom .header-jumbotron img {
 
 main .movies {
   background-color: #303030;
+  color: white;
+}
+main .movies .current-series h3 {
+  background-color: #0182f9;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  bottom: 20px;
 }
 main .movies .movies-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px 0;
-  color: white;
   text-transform: uppercase;
 }
 main .movies .movies-list .movie {
@@ -114,6 +121,14 @@ main .movies .movies-list .movie img {
   -o-object-position: top;
      object-position: top;
   padding-bottom: 10px;
+}
+main .movies .load-more {
+  text-align: center;
+  padding-bottom: 30px;
+}
+main .movies .load-more a {
+  background-color: #0182f9;
+  padding: 10px 40px;
 }
 main .pre-footer {
   background-color: #0182f9;
@@ -166,9 +181,25 @@ footer .footer-bottom {
   background-color: #303030;
   color: white;
   text-transform: uppercase;
-  padding: 50px 0;
 }
-footer .footer-bottom .btn-blue {
+footer .footer-bottom-content {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-bottom-content .btn-blue {
   padding: 10px;
   border: 2px solid #0182f9;
+}
+footer .footer-bottom-content .footer-follow-us {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+footer .footer-bottom-content .footer-follow-us .social-links {
+  display: flex;
+}
+footer .footer-bottom-content .footer-follow-us .social-links li {
+  padding: 5px;
 }

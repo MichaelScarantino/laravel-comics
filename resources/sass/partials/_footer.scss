@@ -38,7 +38,6 @@ footer{
                 }
             }
         }
-        
     }
 
     // Footer bottom
@@ -46,11 +45,35 @@ footer{
         background-color: $secondary_color;
         color: white;
         text-transform: uppercase;
-        padding: 50px 0;
-        // btn blue
-        .btn-blue{
-            padding: 10px;
-            border: 2px solid $primary_color;
+
+        &-content{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            // btn blue
+            .btn-blue{
+                padding: 10px;
+                border: 2px solid $primary_color;
+            }
+
+            // Follow us
+            .footer-follow-us{
+                display: flex;
+                justify-content: right;
+                align-items: center;
+
+                // Social links
+                .social-links{
+                    display: flex;
+
+                    // Li
+                    li{
+                        padding: 5px;
+                    }
+                }
+            }
         }
     }
 }
