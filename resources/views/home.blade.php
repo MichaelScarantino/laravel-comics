@@ -22,7 +22,9 @@
             </div>
 
             {{-- Include movies list --}}
-            @include('components.movies-list')
+            @include('components.movies_list', $data = [
+                'movies_array' => $movie_array
+            ])
 
             {{-- Load more --}}
             <div class="load-more">
