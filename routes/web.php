@@ -18,3 +18,9 @@ Route::get('/', function () {
     $data = ['movie_array' => $movie_array];
     return view('home', $data);
 });
+
+
+Route::get('/movie_details', function () {
+    
+    return view('movie_details');
+})->name('movie-details');
