@@ -10,7 +10,7 @@
 <body>
     
     {{-- Include Header partial --}}
-    @include('partials/header')
+    @include('partials.header')
 
     {{-- Main --}}
     <main>
@@ -18,7 +18,7 @@
     </main>
 
     {{-- Include Footer partial --}}
-    @include('partials/footer')
+    @include('partials.footer')
 
 
 </body>

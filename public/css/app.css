@@ -85,6 +85,11 @@ header .header-bottom .header-jumbotron {
   height: 350px;
   overflow: hidden;
 }
+header .header-bottom .header-jumbotron img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 main .movies {
   background-color: #303030;
