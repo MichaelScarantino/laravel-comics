@@ -54,17 +54,22 @@ header{
                     height: 100px;
                     display: flex;
                     justify-content: center;
+
                     // Li
                     li{
                         margin: 0 15px;
                         line-height: 100px;
+
+                        // Current
+                        &.current{
+                            color: $primary_color;
+                            border-bottom: 4px solid $primary_color;
+                        }
+
+                        // A
                         a{
                             display: inline-block;
                             height: 100px;
-                            &.current{
-                                color: $primary_color;
-                                border-bottom: 4px solid $primary_color;
-                            }
                         }
                     }
                 }

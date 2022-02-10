@@ -17,7 +17,7 @@ Route::get('/', function () {
     $movie_array = config('comics');
     $data = ['movie_array' => $movie_array];
     return view('home', $data);
-});
+})->name('home');
 
 
 Route::get('/movie_details/{id}', function ($id) {
